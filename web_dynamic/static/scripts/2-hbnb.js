@@ -6,8 +6,8 @@ $(document).ready(function () {
 		} else {
 			delete checkedAmenities[$(this).data("id")];
 		}
-		let lst = Object.values(checkedAmenities);
-		if (lst.length > 0) {
+		let amenities = Object.values(checkedAmenities);
+		if (amenities.length > 0) {
 			$("div.amenities > h4").text(
 				Object.values(checkedAmenities).join(", "),
 			);
